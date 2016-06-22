@@ -3,16 +3,42 @@ Header
 ****************************/
 
 header {
+
   padding-top: 10px;
+
+     nav {
+        padding-bottom: 50px;
+        text-align: left;
+
+        ul li {
+            display: inline-block;
+            margin-right: 5px;
+            color: #39add1;
+            svg {
+                fill: #39add1;
+                margin: auto;
+                height: 15px;
+                display: block;
+            }
+            &:hover {
+                color: black;
+                .heart,
+                .location,
+                .contact {
+                    fill: black;
+                }
+            }
+        }
+    }
+    h1 {
+        line-height: 1em;
+    }
+
+    .h1 {
+        margin: auto;
+        text-align: center;
+        @include media-query(420px) {
+            display: none;
+        }
+    }
 }
-  header nav {
-    padding-bottom: 50px;
-    text-align: left;
-  }
-  header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  header h1 {
-    line-height: 1em;
-  }

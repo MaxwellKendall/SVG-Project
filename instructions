@@ -1,0 +1,12 @@
+(1) Replace the background pattern PNG with the matching SVG (background.svg). Use CSS to resize the SVG to match the original design.
+
+(2) Replace rasterized PNG logo with the SVG logo image of the same size (logo.svg): use the inline SVG method to add it (you'll use CSS to modify the image).
+
+(3) At a page width of less than 420 pixels remove the text from the logo and add an H1 tag that contains the logo text.
+
+(4) Replace dogs with SVG images of the same size using the <img> tag.
+
+(5) Change icons in the menu from rasterized images to inline SVGs keeping
+the original image size the same.
+
+(6) When a user hovers over the menu icons, use CSS to change their color to match the menu item text color.

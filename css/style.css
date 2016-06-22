@@ -8,7 +8,8 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url("images/background.png") #edeff0; }
+  background: url(../svgs/background.svg) #edeff0;
+  background-size: 5%; }
 
 #container {
   max-width: 960px;
@@ -58,22 +59,62 @@ main li span {
 main li:last-child {
   margin-right: 0; }
 
+#center-logo {
+  width: 28%; }
+  #center-logo #center-logo:hover {
+    fill: #39add1; }
+  #center-logo .st1 {
+    opacity: 0; }
+    @media (min-width: 420px) {
+      #center-logo .st1 {
+        opacity: 1; } }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap; }
+  main img:nth-of-type(1) {
+    width: 5em;
+    padding: 0; }
+    @media (min-width: 700px) {
+      main img:nth-of-type(1) {
+        width: 10em; } }
+
+.dogs img:hover {
+  transform: scale(1.2) rotateX(360deg); }
+
 /****************************
 Header
 ****************************/
 header {
   padding-top: 10px; }
-
-header nav {
-  padding-bottom: 50px;
-  text-align: left; }
-
-header nav ul li {
-  display: inline-block;
-  margin-right: 20px; }
-
-header h1 {
-  line-height: 1em; }
+  header nav {
+    padding-bottom: 50px;
+    text-align: left; }
+    header nav ul li {
+      display: inline-block;
+      margin-right: 5px;
+      color: #39add1; }
+      header nav ul li svg {
+        fill: #39add1;
+        margin: auto;
+        height: 15px;
+        display: block; }
+      header nav ul li:hover {
+        color: black; }
+        header nav ul li:hover .heart,
+        header nav ul li:hover .location,
+        header nav ul li:hover .contact {
+          fill: black; }
+  header h1 {
+    line-height: 1em; }
+  header .h1 {
+    margin: auto;
+    text-align: center; }
+    @media (min-width: 420px) {
+      header .h1 {
+        display: none; } }
 
 /****************************
 Footer

@@ -22,11 +22,15 @@ header {
             }
             &:hover {
                 color: black;
+                cursor: pointer;
                 .heart,
                 .location,
                 .contact {
                     fill: black;
                 }
+            & a:hover {
+                cursor: pointer;
+            }
             }
         }
     }

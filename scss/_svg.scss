@@ -24,26 +24,59 @@
 // 2. Dogs
 
 .dogs {
-
-    svg:nth-of-type(1) {
+    li svg {
         width: 85%;
-        border: 1px solid red;
     }
-    // svg {
-    //     width: 85%;
-    //     padding-bottom: 10px;
-    //
-    //     .snout {
-    //             fill: white;
-    //         }
-    //
-    //     .coat {
-    //             fill: #52595F;
-    //         }
-    //
-    //     .eyebrow,
-    //     .ear {
-    //             fill: #BA8058;
-    //         }
-    //     }
+    li:nth-of-type(1) svg {
+        .snout {
+            fill: white;
+            }
+        .coat {
+            fill: #BA8058;
+            }
+        .eyebrow,
+        .ear {
+            fill: #BA8058;
+            }
+        }
+    li:nth-of-type(2) svg {
+        .snout {
+            fill: white;
+            }
+        .coat {
+            fill: #EAAA7F;
+            }
+        .eyebrow {
+            fill: #BA8058;
+            }
+        .ear {
+            fill: #EAAA7F;
+            }
+        }
+    li:nth-of-type(3) svg {
+        .snout {
+            fill: white;
+            }
+        .coat {
+            fill: #844B24;
+            }
+        .eyebrow {
+            fill: #BA8058;
+            }
+        .ear {
+            fill: #844B24;
+            }
+        }
+    li:nth-of-type(4) svg {
+        .snout {
+            fill: white;
+            }
+        .coat {
+            fill: #52595F;
+            }
+        .eyebrow,
+        .ear {
+            fill: #BA8058;
+            }
+        }
     }
